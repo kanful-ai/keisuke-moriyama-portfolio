@@ -124,6 +124,39 @@ html,body{background:#fff}
   border-width:3px;
   box-shadow:0 9px 22px rgba(29,81,147,.14);
 }
+</style><style>
+/* Unified typography, proportional spacing, and natural line breaks */
+.wrap{width:100%;min-width:0}
+.hero-intro{font-size:clamp(15px,1.5vw,17px);white-space:normal;line-height:1.75;max-width:100%;text-wrap:pretty}
+h2{line-height:1.45;letter-spacing:-.025em;text-wrap:balance;overflow-wrap:break-word}
+p,.intro,.statement,.release-head,.project p,.release-card p{overflow-wrap:break-word;line-break:strict;text-wrap:pretty}
+.intro,.release-head{font-size:clamp(16px,1.7vw,18px);line-height:1.8;letter-spacing:-.03em}
+.release-head{max-width:none;margin:0 0 28px}
+.statement{font-size:clamp(19px,2.45vw,25px);line-height:1.7}
+.project{grid-template-columns:minmax(0,290px) minmax(0,1fr)}
+.project>div,.release-card>div,.row>div{min-width:0}
+.project h3{font-size:clamp(17px,1.9vw,20px);line-height:1.55;white-space:normal;overflow-wrap:normal;text-wrap:balance}
+.release-card h3{font-size:clamp(17px,1.85vw,19px);line-height:1.55;text-wrap:balance;overflow-wrap:break-word}
+.release-card{grid-template-columns:minmax(0,1fr) 145px}
+.card p,.project p,.release-card p{line-height:1.8}
+.hero-value-main{overflow-wrap:normal;word-break:keep-all}
+@media(max-width:900px){
+ .project{grid-template-columns:minmax(0,250px) minmax(0,1fr);gap:20px}
+ .release-card{grid-template-columns:minmax(0,1fr) 125px;column-gap:18px}
+}
+@media(max-width:720px){
+ .project,.release-card,.row{grid-template-columns:minmax(0,1fr)}
+ .project{gap:9px}
+ .release-card{gap:14px}
+ .project h3,.release-card h3{white-space:normal;word-break:normal}
+ .release-head{max-width:100%;font-size:16px;line-height:1.8}
+ .intro{font-size:16px}
+}
+@media(max-width:420px){
+ .wrap{padding-inline:20px}
+ .hero-values{grid-template-columns:1fr}
+ .chip{white-space:normal;overflow-wrap:anywhere}
+}
 </style></head><body>
 <header class="hero"><div class="wrap">
 <div class="eyebrow">Business Leadership · New Business · Alliance</div>
@@ -148,7 +181,7 @@ html,body{background:#fff}
 <section><div class="wrap"><h2>Career Highlights</h2><div class="timeline"><div class="row"><div class="year">Current</div><div><strong>株式会社Wiz｜事業部長</strong><span>事業P/L、約50名組織、新規サービス、アライアンス、営業・運営を統括。</span></div></div><div class="row"><div class="year">Recent</div><div><strong>XR・3D・AI領域</strong><span>スタートアップ／プロジェクトで事業開発、PM、PoC、スポンサー・パートナー開拓。</span></div></div><div class="row"><div class="year">~15 years</div><div><strong>株式会社エイチーム</strong><span>ゲーム、Webサービス、BPO等の事業立ち上げ・拡大、営業企画、IP・プラットフォーム連携を経験。</span></div></div></div></div></section>
 <section id="press-releases"><div class="wrap">
 <h2>参画プロジェクト・プレスリリース</h2>
-<p class="release-head">XR・3D技術を活用した新しいファン体験の創出に向け、企画・事業開発・PoC・パートナー連携を推進したプロジェクトです。</p>
+<p class="release-head">XR・3Dを活用したファン体験を企画。事業開発からPoC、パートナー連携まで推進しました。</p>
 <div class="release-list">
 <article class="release-card">
 <div><h3>3Dミュージックビデオ・3Dアバターの企画・PoC</h3><p>MADMEDの公演会場で、ソニーの空間再現ディスプレイ（SRD）を用いた3Dミュージックビデオと3Dアバターの体験を検証。</p></div>

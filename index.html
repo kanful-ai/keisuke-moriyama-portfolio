@@ -317,6 +317,52 @@ footer,.note{font-size:12px;line-height:1.7}
  #fit .closing h3{font-size:24px}
 }
 </style>
+
+<style>
+/* PROCESS compact readability refinement */
+#process .framework{
+  margin-top:20px;
+  gap:9px;
+}
+#process .step{
+  min-height:124px;
+  padding:14px 15px 16px;
+}
+#process .step span{
+  font-size:16px;
+  line-height:1.2;
+}
+#process .step b{
+  font-size:21px;
+  line-height:1.35;
+  margin-top:7px;
+}
+#process .step small{
+  font-size:16px;
+  line-height:1.45;
+  margin-top:7px;
+}
+@media(max-width:820px){
+  #process .framework{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:8px;
+    margin-top:18px;
+  }
+  #process .step{
+    min-height:108px;
+    padding:13px 14px 14px;
+  }
+  #process .step:last-child{grid-column:1/-1;}
+  #process .step span{font-size:15px;}
+  #process .step b{font-size:20px;margin-top:5px;}
+  #process .step small{font-size:15px;margin-top:5px;line-height:1.4;}
+}
+@media(max-width:360px){
+  #process .framework{grid-template-columns:1fr;}
+  #process .step:last-child{grid-column:auto;}
+  #process .step{min-height:0;padding:12px 14px 13px;}
+}
+</style>
 </head><body data-theme="simple"><nav><div class="inner"><a class="brand" href="#top">KEISUKE MORIYAMA <small>/ BUSINESS DEVELOPMENT</small></a><div class="navlinks"><a href="#about">強み</a><a href="#business">事業運営</a><a href="#projects">AIクローンPJ</a><a href="#dynamo">3DCG LIVE</a><a href="#openheart">3DGS</a><a href="#process">推進力</a><a href="#fit">提供できる価値</a></div></div></nav><main id="top">
 <section class="hero"><div class="wrap"><div class="overline"><span class="glowdot"></span> PORTFOLIO / BUSINESS DEVELOPMENT</div><h1>新しい技術を、<br/><em>事業価値に変える。</em></h1><p class="hero-copy">顧客課題やユーザー体験を起点に、技術を活用した新しい事業価値を創出。<br/>パートナーと連携し、PoCからサービス設計・事業化まで推進してきました。</p><div class="signature">森山 圭介 <span>Keisuke Moriyama</span></div><div class="hero-actions"><a class="btn" href="#projects">プロジェクトを見る <span aria-hidden="true">↗</span></a><a class="btn ghost" href="#fit">事業開発で提供できる価値 <span aria-hidden="true">↓</span></a></div></div></section>
 <section class="section chapter anchor" id="about"><div class="wrap"><div class="eyebrow">1 / PROFILE</div><h2 class="sec-title">顧客課題を、<br/>事業として形にする。</h2><p class="section-lead">ゲーム・Webの事業運営から、XR・3D・AIの事業開発まで。企画から実装・成長まで、一貫して推進。</p>

@@ -484,6 +484,33 @@ footer,.note{font-size:12px;line-height:1.7}
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 <meta name="theme-color" content="#0B84B3">
+<style>
+/* Ateam experience: retain the existing 3-column layout, add official service visuals */
+#business .ateam-visual-details{align-items:start;}
+#business .ateam-detail{min-width:0;}
+#business .ateam-detail-head{display:flex;align-items:center;gap:12px;margin-bottom:10px;min-height:66px;}
+#business .ateam-visual{
+  width:64px;height:64px;flex:0 0 64px;border:1px solid #d7e4ec;border-radius:9px;
+  background:#f4f8fb;display:flex;align-items:center;justify-content:center;overflow:hidden;
+  text-decoration:none;position:relative;
+}
+#business .ateam-game-visual{width:96px;flex-basis:96px;padding:7px;}
+#business .ateam-visual img{width:100%;height:100%;object-fit:contain;display:block;position:relative;z-index:2;}
+#business .ateam-visual-fallback{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;
+  font:700 10px/1.2 "DM Sans",sans-serif;letter-spacing:.05em;color:#0b84b3;z-index:1;
+}
+#business .ateam-bpo-visual{font:800 17px/1 "DM Sans",sans-serif;color:#0b84b3;letter-spacing:.04em;}
+#business .ateam-official{display:block;margin-top:5px;color:#087eab;text-decoration:none;font-size:12px;font-weight:700;}
+#business .ateam-official:hover{text-decoration:underline;}
+@media(max-width:980px){
+  #business .ateam-detail-head{min-height:0;}
+}
+@media(max-width:700px){
+  #business .ateam-visual{width:58px;height:58px;flex-basis:58px;}
+  #business .ateam-game-visual{width:90px;flex-basis:90px;}
+}
+</style>
 </head><body data-theme="simple"><nav><div class="inner"><a class="brand" href="#top">KEISUKE MORIYAMA <small>/ BUSINESS DEVELOPMENT</small></a><div class="navlinks"><a href="#about">強み</a><a href="#business">事業運営</a><a href="#projects">AIクローンPJ</a><a href="#dynamo">3DCG LIVE</a><a href="#openheart">3DGS</a><a href="#fit">提供できる価値</a><a href="#process">推進力</a></div></div></nav><main id="top">
 <section class="hero"><div class="wrap"><div class="overline"><span class="glowdot"></span> PORTFOLIO / BUSINESS DEVELOPMENT</div><h1>新しい技術を、<br/><em>事業価値に変える。</em></h1><p class="hero-copy">顧客課題やユーザー体験を起点に、技術を活用した新しい事業価値を創出。<br/>パートナーと連携し、PoCからサービス設計・事業化まで推進してきました。</p><div class="signature">森山 圭介 <span>Keisuke Moriyama</span></div><div class="hero-actions"><a class="btn" href="#projects">プロジェクトを見る <span aria-hidden="true">↗</span></a><a class="btn ghost" href="#fit">事業開発で提供できる価値 <span aria-hidden="true">↓</span></a></div></div></section>
 <section class="section chapter anchor" id="about"><div class="wrap"><div class="eyebrow">1 / PROFILE</div><h2 class="sec-title">事業運営から、<br/>新規事業開発まで。</h2><p class="section-lead">事業責任者としての経験を軸に、企画・PM・営業・アライアンスを横断して事業を推進。<br/>ゲーム・Web・インフラからXR・3D・AIまで、新しいサービスの事業化と成長に取り組んできました。</p>
@@ -523,10 +550,33 @@ footer,.note{font-size:12px;line-height:1.7}
 <div><strong>約15年</strong><span>ゲーム・Web・BPOの事業推進</span></div>
 <div><strong>6事業</strong><span>営業プロセスを横断して整備</span></div>
 </div>
-<div class="biz-details biz-details-3">
-<div><b>ゲーム・IP</b><p>国内外マーケティング、海外提携・IP交渉。</p></div>
-<div><b>Web・営業DX</b><p>事業運営、CRM・MA活用、6事業の営業改革。</p></div>
-<div><b>BPO・新規事業</b><p>コールセンター事業とサブスク事業の企画・運営。</p></div>
+<div class="biz-details biz-details-3 ateam-visual-details">
+<div class="ateam-detail">
+  <div class="ateam-detail-head">
+    <a class="ateam-visual ateam-game-visual" href="https://www.a-tm.co.jp/service/entertainment/" target="_blank" rel="noopener noreferrer" aria-label="エイチーム エンターテインメント事業 公式ページ">
+      <img src="https://app.a-tm.co.jp/valkyrie-connect/images/top_logo-22da9f29.png" alt="ヴァルキリーコネクト ロゴ" loading="lazy"/>
+      <span class="ateam-visual-fallback">VALKYRIE<br/>CONNECT</span>
+    </a>
+    <div><b>ゲーム・IP</b><a class="ateam-official" href="https://www.a-tm.co.jp/service/entertainment/" target="_blank" rel="noopener noreferrer">公式ページ ↗</a></div>
+  </div>
+  <p>国内外マーケティング、海外提携・IP交渉。</p>
+</div>
+<div class="ateam-detail">
+  <div class="ateam-detail-head">
+    <a class="ateam-visual" href="https://hikkoshizamurai.jp/" target="_blank" rel="noopener noreferrer" aria-label="引越し侍 公式サイト">
+      <img src="https://hikkoshizamurai.jp/img/icon-reporter.png" alt="引越し侍 公式キャラクター" loading="lazy"/>
+    </a>
+    <div><b>Web・営業DX</b><a class="ateam-official" href="https://hikkoshizamurai.jp/" target="_blank" rel="noopener noreferrer">引越し侍 ↗</a></div>
+  </div>
+  <p>事業運営、CRM・MA活用、6事業の営業改革。</p>
+</div>
+<div class="ateam-detail">
+  <div class="ateam-detail-head">
+    <div class="ateam-visual ateam-bpo-visual" aria-hidden="true">BPO</div>
+    <div><b>BPO・新規事業</b></div>
+  </div>
+  <p>コールセンター事業とサブスク事業の企画・運営。</p>
+</div>
 </div>
 </article>
 </div>

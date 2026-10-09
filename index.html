@@ -511,6 +511,80 @@ footer,.note{font-size:12px;line-height:1.7}
   #business .ateam-game-visual{width:90px;flex-basis:90px;}
 }
 </style>
+<style>
+/* Business operations visuals — keep existing two-column structure */
+#business .business-visual-details{
+  grid-template-columns:1fr 1fr;
+  gap:28px;
+}
+#business .business-detail{
+  min-width:0;
+}
+#business .business-detail-visual{
+  width:100%;
+  height:150px;
+  margin-bottom:16px;
+  border:1px solid #d7e4ec;
+  border-radius:10px;
+  background:#f5f9fc;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+#business .business-detail-visual img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+#business .lifeline-visual img{
+  width:auto;
+  max-width:180px;
+  padding:8px;
+}
+#business .myna-visual{
+  text-decoration:none;
+  background:#fffdf6;
+}
+#business .myna-visual img{
+  object-fit:cover;
+  object-position:center;
+}
+#business .business-detail-copy b{
+  display:block;
+}
+#business .business-detail-label{
+  display:block;
+  margin-top:6px;
+  color:#0b84b3;
+  font-size:12px;
+  line-height:1.55;
+  font-weight:700;
+}
+#business .business-detail-link{
+  text-decoration:none;
+}
+#business .business-detail-link:hover{
+  text-decoration:underline;
+}
+#business .business-detail-copy p{
+  margin-top:10px;
+}
+@media(max-width:700px){
+  #business .business-visual-details{
+    grid-template-columns:1fr;
+    gap:22px;
+  }
+  #business .business-detail-visual{
+    height:138px;
+    margin-bottom:13px;
+  }
+  #business .lifeline-visual img{
+    max-width:150px;
+  }
+}
+</style>
 </head><body data-theme="simple"><nav><div class="inner"><a class="brand" href="#top">KEISUKE MORIYAMA <small>/ BUSINESS DEVELOPMENT</small></a><div class="navlinks"><a href="#about">強み</a><a href="#business">事業運営</a><a href="#projects">AIクローンPJ</a><a href="#dynamo">3DCG LIVE</a><a href="#openheart">3DGS</a><a href="#fit">提供できる価値</a><a href="#process">推進力</a></div></div></nav><main id="top">
 <section class="hero"><div class="wrap"><div class="overline"><span class="glowdot"></span> PORTFOLIO / BUSINESS DEVELOPMENT</div><h1>新しい技術を、<br/><em>事業価値に変える。</em></h1><p class="hero-copy">顧客課題やユーザー体験を起点に、技術を活用した新しい事業価値を創出。<br/>パートナーと連携し、PoCからサービス設計・事業化まで推進してきました。</p><div class="signature">森山 圭介 <span>Keisuke Moriyama</span></div><div class="hero-actions"><a class="btn" href="#projects">プロジェクトを見る <span aria-hidden="true">↗</span></a><a class="btn ghost" href="#fit">事業開発で提供できる価値 <span aria-hidden="true">↓</span></a></div></div></section>
 <section class="section chapter anchor" id="about"><div class="wrap"><div class="eyebrow">1 / PROFILE</div><h2 class="sec-title">事業運営から、<br/>新規事業開発まで。</h2><p class="section-lead">事業責任者としての経験を軸に、企画・PM・営業・アライアンスを横断して事業を推進。<br/>ゲーム・Web・インフラからXR・3D・AIまで、新しいサービスの事業化と成長に取り組んできました。</p>
@@ -538,9 +612,27 @@ footer,.note{font-size:12px;line-height:1.7}
 <div><strong>約5億円</strong><span>年間営業利益規模のP/Lを担当</span></div>
 <div><strong>約50名</strong><span>営業・企画・運用の組織を統括</span></div>
 </div>
-<div class="biz-details">
-<div><b>事業戦略・アライアンス</b><p>P/L・KPI・営業戦略、協業先開拓と組織運営を推進。</p></div>
-<div><b>新規サービス開発</b><p>デジタル庁と連携し、引越しワンストップサービスを企画・開発。<br/>マイナポータルAPIを実装したWebサービスのPMとして、開発・提供準備を統括。</p></div>
+<div class="biz-details business-visual-details">
+<div class="business-detail">
+  <div class="business-detail-visual lifeline-visual">
+    <img src="assets/lifeline-utilities.webp" alt="インターネット回線・電気・ガスなどのライフライン事業イメージ" loading="lazy"/>
+  </div>
+  <div class="business-detail-copy">
+    <b>事業戦略・アライアンス</b>
+    <span class="business-detail-label">インターネット回線 / 電気・ガス / ライフライン</span>
+    <p>P/L・KPI・営業戦略、協業先開拓と組織運営を推進。</p>
+  </div>
+</div>
+<div class="business-detail">
+  <a class="business-detail-visual myna-visual" href="https://myna.go.jp/html/equipped_with_smartphone.html" target="_blank" rel="noopener noreferrer" aria-label="マイナポータル公式ページ">
+    <img src="assets/myna-portal.webp" alt="マイナポータルのスマートフォン利用イメージ" loading="lazy"/>
+  </a>
+  <div class="business-detail-copy">
+    <b>新規サービス開発</b>
+    <a class="business-detail-label business-detail-link" href="https://myna.go.jp/html/equipped_with_smartphone.html" target="_blank" rel="noopener noreferrer">マイナポータル ↗</a>
+    <p>デジタル庁と連携し、引越しワンストップサービスを企画・開発。<br/>マイナポータルAPIを実装したWebサービスのPMとして、開発・提供準備を統括。</p>
+  </div>
+</div>
 </div>
 </article>
 <article class="biz-panel biz-panel-ateam">
